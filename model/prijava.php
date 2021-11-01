@@ -1,12 +1,13 @@
 <?php
-class Prijava{
-    public $id;   
-    public $predmet;   
-    public $katedra;   
-    public $sala;   
+class Prijava
+{
+    public $id;
+    public $predmet;
+    public $katedra;
+    public $sala;
     public $datum;
-    
-    public function __construct($id=null, $predmet=null, $katedra=null, $sala=null, $datum=null)
+
+    public function __construct($id = null, $predmet = null, $katedra = null, $sala = null, $datum = null)
     {
         $this->id = $id;
         $this->predmet = $predmet;
@@ -25,18 +26,18 @@ class Prijava{
 
     #funkcija getById
 
-    public static function getById($id, mysqli $conn){
+    public static function getById($id, mysqli $conn)
+    {
         $query = "SELECT * FROM prijave WHERE id=$id";
 
         $myObj = array();
-        if($msqlObj = $conn->query($query)){
-            while($red = $msqlObj->fetch_array(1)){
-                $myObj[]= $red;
+        if ($msqlObj = $conn->query($query)) {
+            while ($red = $msqlObj->fetch_array(1)) {
+                $myObj[] = $red;
             }
         }
 
         return $myObj;
-
     }
 
     #deleteById
@@ -50,7 +51,7 @@ class Prijava{
     #update
     public function update($id, mysqli $conn)
     {
-        $query = "UPDATE prijave set predmet = $this->predmet,katedra = $this->katedra,sala = $this->sala,datum = $this->datum WHERE id=$id";
+        $query = "UPDATE prijave set predmet = '$this->predmet',katedra = '$this->katedra',sala = '$this->sala',datum = '$this->datum' WHERE id=$id";
         return $conn->query($query);
     }
 
@@ -61,5 +62,3 @@ class Prijava{
         return $conn->query($query);
     }
 }
-
-?>
