@@ -1,0 +1,5 @@
+<?php
+
+// kreirati  uodate funkciju
+
+?> 

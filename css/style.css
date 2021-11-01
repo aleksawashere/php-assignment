@@ -1,0 +1,105 @@
+
+* {
+    font-family: Montserrat;
+}
+
+body{
+    background-image: url("../img/pocetna4.jpeg");
+     background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+form {
+    display: block;
+    margin-top: 210px;
+    margin-left: -590px;
+    height: 400px;
+    width: 700px;
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+    border: orange;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 12px;
+    padding-top: 24px
+}
+
+/* Avatar image */
+img.avatar {
+    width: 15em;
+    height: 20em;
+    border-radius: 5%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+.main-div {
+    /*background: #ffffff none repeat scroll 0 0;*/
+    border-radius: 2px;
+    margin: 10px auto 30px;
+    max-width: 38%;
+    padding: 50px 70px 70px 71px
+}
+
+.login-form {
+    /* background-image: url(../img/background.jpg); */
+    text-align: center;
+}
+
+.login-form .btn.btn-primary {
+    margin-top: 10px;
+    margin-right: -60px;
+    background:teal none repeat scroll 0 0;
+    border-color:teal;
+    font-size: 20px;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    
+
+}
+
+.login-form .btn.btn-primary:hover {
+    background: teal none repeat scroll 0 0;
+    border-color: black;
+    color: black;
+    font-size: 20px;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+}
+
+.username{
+    margin-left: -42px;
+   
+} 
+
+ .password{  
+    margin-right: -28px;
+
+}

@@ -1,0 +1,137 @@
+* {
+    font-family: Verdana;
+}
+
+.jumbotron {
+    background-color: rgba(255, 182, 193, 0);
+    float: center;
+    color: #000;
+    text-align: center;
+    border: 3px white; 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,128,128,1));
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    margin-top: 5px;
+}
+
+body{
+    background-image: url("../img/slika.jpg" );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+/* za zakazi i izmeni donji deo, gde se vidi knjiga */
+.sir-form{
+    background: #000; 
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 90%;
+    border: 5px solid orange; 
+} 
+.sir-form .form-control{
+    border-radius:1rem;
+}
+
+/* ova dva su ubacena */
+.sir-image{
+    text-align: center;
+}
+
+/* ne znam */
+.sir-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+
+/* ne znam */
+.prijava-form form{
+    padding: 3%;
+} 
+
+/* ne znam */
+.prijava-form form .row{
+    margin-bottom: -7%;
+}
+
+/* ovo je za izmeni pa naslov */
+ .prijava-form h3{
+    margin-bottom: 8%;
+    margin-top: -5%;
+    text-align: center;
+    color: #0062cc;
+} 
+
+/* ovo je za Zakazi klk, novi prozor */
+.prijava-form {
+    width: 80%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: rgba(160, 62, 129, 0);
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+div.modal-content, div.container.sir-form {
+    background-image: url("../img/slika.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.row{
+    height: 70px;
+}  
+
+.col-md-4{
+    margin-top: 18px;
+} 
+
+#pregled{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgba(225, 225, 208, 0.5);
+}
+
+.thead{
+    font-size: 20px;
+    text-align: center;
+}
+
+#btn-izmeni{
+    font-size: 18px;
+    border-radius: 28px;
+    background-image: linear-gradient(to right, #3cb0fd,#3498db);
+    border-color: white;
+}
+
+#btn-obrisi{
+    font-size: 18px;
+    border-radius: 28px; 
+    background-image: linear-gradient(to right, #ff704d,#ff5c33);
+    border-color: white;   
+}
+
+
+#btn-sortiraj{
+    font-size: 18px;
+    border-radius: 28px; 
+    background-image: linear-gradient(to right, #9dff4d,#ebff33);
+    border-color: white;   
+}
+
+:placeholder-shown{
+    width: 300px;
+    height: 30px;
+}
